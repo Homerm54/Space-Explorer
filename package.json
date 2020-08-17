@@ -1,0 +1,33 @@
+{
+  "name": "space-explorer",
+  "version": "1.0.0",
+  "description": "Explore the Universe with the Nasa",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Homerm54/Space-Explorer.git"
+  },
+  "keywords": [
+    "Nasa",
+    "PWA",
+    "Space",
+    "React"
+  ],
+  "author": "Omer Marquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Homerm54/Space-Explorer/issues"
+  },
+  "homepage": "https://github.com/Homerm54/Space-Explorer#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "next": "9.3.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
