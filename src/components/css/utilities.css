@@ -1,3 +1,35 @@
 .text-center{
   text-align: center;
 }
+
+.text-white{
+  color: var(--custom-white);
+}
+
+.text-blue{
+  color: var(--custom-blue);
+}
+
+.text-blue-light{
+  color: var(--custom-blue-light);
+}
+
+.text-blue-dark{
+  color: var(--custom-blue-dark);
+}
+
+.text-purple{
+  color: var(--custom-purple);
+}
+
+.text-blue-light{
+  color: var(--custom-purple-light);
+}
+
+.text-blue-dark{
+  color: var(--custom-purple-dark);
+}
+
+.text-black{
+  color: black;
+}

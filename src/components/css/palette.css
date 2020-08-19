@@ -3,6 +3,9 @@
 /* CSS HEX */
 :root{
 --custom-purple: #973bc9ff;
+--custom-purple-dark: #39154D;
 --custom-white: #f1f1f1ff;
 --custom-blue: #006daaff;
+--custom-blue-light: #006DAA;
+--custom-blue-dark: #001BAA;
 }
