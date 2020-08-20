@@ -1,4 +1,10 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars, faTimes, faDna, faSpaceShuttle, faAtom,
+  faSatellite, faUserAstronaut
+} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faBars, faTimes);
+library.add(
+  faBars, faTimes, faDna, faSpaceShuttle, faAtom,
+  faSatellite, faUserAstronaut
+);
