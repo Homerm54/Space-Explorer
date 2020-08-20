@@ -1,3 +1,13 @@
+@keyframes slide-in{
+  from{
+    transform: translateX(-100%);
+  }
+
+  to{
+    transform: translateX(0%);
+  }
+}
+
 .container {
   /*Change BG image dynamically*/
   background-image: url('/images/Background Images/Vertical/Taurus2Eridanus.jpg');
@@ -7,6 +17,34 @@
   background-attachment: fixed;
   padding-top: 25%;
   min-height: 100vh;
+}
+
+.section{
+  transition: color 800ms;
+}
+
+.copyright{
+  position: absolute;
+  top: 10%;
+  left: 0;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  padding-left: 1rem;
+  background-color: black;
+  border: 2px solid black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  transform: translateX(-100%);
+  animation: slide-in 500ms ease-in-out 2s forwards;
+}
+
+.a{
+  color: unset;
+}
+
+.a:hover{
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
