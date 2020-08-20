@@ -13,6 +13,8 @@
   top: 0.5rem; /*Small 'Margin'*/
   animation: appear 1s;
   z-index: 100;
+
+  max-width: 100%;
 }
 
 .toggleButton{

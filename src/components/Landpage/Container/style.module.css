@@ -5,7 +5,27 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
-  padding-top: 6rem;
+  padding-top: 25%;
   min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  /*md*/
+  .container {
+    padding-top: 12%;
+  }
+}
+
+@media (min-width: 992px) {
+  /*lg*/
+  .container {
+    padding-top: 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /*xl*/
+  .container {
+    padding-top: 18%;
+  }
 }

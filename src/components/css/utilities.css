@@ -57,3 +57,84 @@
 .h6{
   font-size: 1rem;
 }
+
+@media (min-width: 768px) {
+  /*md*/
+  .h1{
+    font-size: 2.4rem;
+  }
+  
+  .h2{
+    font-size: 2.12rem;
+  }
+  
+  .h3{
+    font-size: 1.86rem;
+  }
+  
+  .h4{
+    font-size: 1.52rem;
+  }
+  
+  .h5{
+    font-size: 1.26rem;
+  }
+  
+  .h6{
+    font-size: 1.12rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /*lg*/
+  .h1{
+    font-size: 2.7rem;
+  }
+  
+  .h2{
+    font-size: 2.52rem;
+  }
+  
+  .h3{
+    font-size: 2.36rem;
+  }
+  
+  .h4{
+    font-size: 2.12rem;
+  }
+  
+  .h5{
+    font-size: 1.86rem;
+  }
+  
+  .h6{
+    font-size: 1.62rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  /*xl*/
+  .h1{
+    font-size: 3rem;
+  }
+  
+  .h2{
+    font-size: 3.8rem;
+  }
+  
+  .h3{
+    font-size: 3.7rem;
+  }
+  
+  .h4{
+    font-size: 3.6rem;
+  }
+  
+  .h5{
+    font-size: 3.5rem;
+  }
+  
+  .h6{
+    font-size: 3.4rem;
+  }
+}

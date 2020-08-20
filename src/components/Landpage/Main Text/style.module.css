@@ -1,9 +1,37 @@
-.container{
+.container {
+  justify-content: center;
   text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
-.h1{
-  font-size: 3.4rem;
+.h1 {
+  font-size: 350%;
+}
+
+@media (min-width: 576px) {
+  /*sm*/
+  .h1 {
+    font-size: 500%;
+  }
+}
+
+@media (min-width: 768px) {
+  /*md*/
+  .h1 {
+    font-size: 600%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  /*lg*/
+  .h1 {
+    font-size: 650%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /*xl*/
+  .h1 {
+    font-size: 700%;
+  }
 }
