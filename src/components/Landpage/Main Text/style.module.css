@@ -10,14 +10,14 @@
 @media (min-width: 576px) {
   /*sm*/
   .h1 {
-    font-size: 500%;
+    font-size: 410%;
   }
 }
 
 @media (min-width: 768px) {
   /*md*/
   .h1 {
-    font-size: 600%;
+    font-size: 460%;
     max-width: 50%;
   }
 }
@@ -25,13 +25,13 @@
 @media (min-width: 992px) {
   /*lg*/
   .h1 {
-    font-size: 650%;
+    font-size: 550%;
   }
 }
 
 @media (min-width: 1200px) {
   /*xl*/
   .h1 {
-    font-size: 700%;
+    font-size: 600%;
   }
 }
