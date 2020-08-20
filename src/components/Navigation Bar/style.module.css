@@ -15,14 +15,18 @@
   z-index: 100;
 
   max-width: 100%;
+
+  font-family: Orbitron;
 }
 
 .toggleButton{
   align-self: center;
+  font-size: 120%;
 }
 
 .title{
   text-align: center;
+  font-size: 110%;
 }
 
 .nav-links-container{
@@ -69,4 +73,40 @@
 
 .nav-item{
   padding: 0.2rem;
+}
+
+@media (min-width: 768px) {/*md*/
+  .toggleButton{
+    font-size: 180%;
+  }
+  
+  .title{
+    font-size: 180%;
+  }
+
+  .nav-links-container{
+    padding-top: 5.2rem;
+  }
+
+  .nav-links-list{
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {/*xl*/
+  .toggleButton{
+    font-size: 230%;
+  }
+  
+  .title{
+    font-size: 230%;
+  }
+
+  .nav-links-container{
+    padding-top: 6.2rem;
+  }
+
+  .nav-links-list{
+    font-size: 2.2rem;
+  }
 }

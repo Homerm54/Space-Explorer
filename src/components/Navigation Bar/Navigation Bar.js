@@ -12,9 +12,9 @@ function Navbar() {
   return (
     <section className={`container ${styles.container}`}>
 
-      <div className={`row ${styles['nav-header']}`}>
-        <h2 className={`col h3 ${styles.title}`}>Space Explorer</h2>
-        <span className={`col-auto h4 ${styles.toggleButton}`} role="button"
+      <div className={`row`}>
+        <h2 className={`col ${styles.title}`}>Space Explorer</h2>
+        <span className={`col-auto ${styles.toggleButton}`} role="button"
           onClick={toggleState}>
           {navLinksDisplay ? <FontAwesomeIcon icon="times" className="text-blue" /> : <FontAwesomeIcon icon="bars" />}
         </span>
