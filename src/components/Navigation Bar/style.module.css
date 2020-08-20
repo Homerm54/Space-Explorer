@@ -12,6 +12,7 @@
   position: fixed;
   top: 0.5rem; /*Small 'Margin'*/
   animation: appear 1s;
+  z-index: 100;
 }
 
 .toggleButton{
@@ -40,7 +41,7 @@
   
   transition: transform 500ms, background-color 250ms ease 600ms;
   /*Change this according to the theme*/
-  background: linear-gradient(270deg, black 80%, transparent 80%);
+  background: linear-gradient(270deg, black 82%, transparent 80%);
 }
 
 .show-navContainer{
