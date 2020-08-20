@@ -14,8 +14,8 @@ function Navbar() {
 
       <div className={`row`}>
         <Link href="/">
-          <a>
-            <h2 className={`col ${styles.title}`}>Space Explorer</h2>
+          <a className={`col ${styles['nav-link']}`} style={{color: 'unset'}}>
+            <h2 className={`${styles.title}`}>Space Explorer</h2>
           </a>
         </Link>
         <span className={`col-auto ${styles.toggleButton}`} role="button"
