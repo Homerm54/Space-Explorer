@@ -1,0 +1,11 @@
+.container {
+  /*Change BG image dynamically*/
+  background-image: url('/images/Background Images/Vertical/Taurus2Eridanus.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  padding-top: 6rem;
+  min-height: 100vh;
+}

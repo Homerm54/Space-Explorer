@@ -1,8 +1,9 @@
 import Link from 'next/link';
 
-export default function Test(){
+import Landpage from 'components/Landpage/Main';
+
+export default function Home(){
   return(
-    <>
-    </>
+    <Landpage />
   )
 }
