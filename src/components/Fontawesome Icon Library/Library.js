@@ -3,12 +3,12 @@ import {
   faBars, faTimes, faDna, faSpaceShuttle, faAtom,
   faSatellite, faUserAstronaut, faChevronDown, faDatabase,
   faMobile, faCogs, faHome, faQuestionCircle, faIdCard, faInfoCircle, 
-  faSun, faMoon, faLongArrowAltDown
+  faSun, faMoon, faLongArrowAltDown, faAlignLeft, faImage
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
   faBars, faTimes, faDna, faSpaceShuttle, faAtom,
   faSatellite, faUserAstronaut, faChevronDown, faDatabase,
   faMobile, faCogs, faHome, faQuestionCircle, faIdCard,
-  faInfoCircle, faSun, faMoon, faLongArrowAltDown
+  faInfoCircle, faSun, faMoon, faLongArrowAltDown, faAlignLeft, faImage
 );
