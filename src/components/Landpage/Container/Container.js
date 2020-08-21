@@ -22,7 +22,7 @@ function Container({ children }) {
       }else{
         setCurrentImage(currentImage + 1);
       }
-    }, 6000);
+    }, 10000);
 
     /*const fadeOut = setTimeout(()=>{
       console.log("Faded out")

@@ -13,7 +13,7 @@
   /*Small 'Margin'*/
   animation: fade-in 1s;
   z-index: 100;
-  max-width: 100%;
+  max-width: 100% !important;
   font-family: Orbitron;
 }
 
@@ -43,7 +43,7 @@
   /*Default*/
   transition: transform 500ms, background-color 250ms ease 600ms;
   /*Change this according to the theme*/
-  background: linear-gradient(270deg, black 82%, transparent 80%);
+  background: linear-gradient(270deg, black 78%, transparent 80%);
 }
 
 .show-navContainer {
@@ -62,10 +62,16 @@
 .nav-link {
   text-decoration: none;
   color: unset;
+  display: inline-block;
+  transition-duration: 500ms;
 }
 
-.nav-link:hover {
+.nav-link:hover{
   text-decoration: none;
+}
+
+.nav-item > .nav-link:hover{
+  transform: translateX(-20%);
 }
 
 .nav-item {
@@ -114,6 +120,12 @@
   }
   .nav-links-list {
     font-size: 1.4rem;
+  }
+  .nav-links-container{
+    background: linear-gradient(270deg, black 40%, transparent 100%);
+  }
+  .nav-links-list{
+    width: auto;
   }
 }
 
