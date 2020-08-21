@@ -13,7 +13,7 @@ function Navbar() {
   const toggleState = () => (setNavLinksDisplay(!navLinksDisplay));
 
   return (
-    <section className={`container ${styles.container}`}>
+    <section className={`container-fluid ${styles.container}`}>
 
       <div className={`row`}>
         <Link href="/">

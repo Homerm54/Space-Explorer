@@ -1,5 +1,5 @@
 body{
   font-family: Raleway;
-  background-color: black;
-  color: var(--custom-white);
+  background-color: var(--custom-white);
+  color: black;
 }
