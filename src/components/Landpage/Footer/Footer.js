@@ -1,12 +1,14 @@
 import styles from './style.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import URLs from 'config/URLs';
+
 function Footer() {
 
   return (
     <div className={`row ${styles.container}`}>
       <div className={`col-6`}>
-        <a href="#Info" className={`${styles.button}`} role="button">
+        <a href={URLs.About} className={`${styles.button}`} role="button">
           <FontAwesomeIcon icon="chevron-down" className={styles.icon} />
           &nbsp;&nbsp;
           How this works

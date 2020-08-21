@@ -1,10 +1,10 @@
 import styles from './style.module.css';
 
-function MainText(){
+function MainText({ text }){
   return(
     <div className={`row ${styles.container}`}>
       <h1 className={`col ${styles.h1}`}>
-        Discover the Universe
+        {text}
       </h1>
     </div>
   )

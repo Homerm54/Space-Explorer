@@ -3,7 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Link from 'next/link';
 
+import ULRs from 'config/URLs';
+
 import styles from './style.module.css';
+import URLs from 'config/URLs';
 function Navbar() {
 
   const [navLinksDisplay, setNavLinksDisplay] = useState(false);
@@ -28,34 +31,39 @@ function Navbar() {
         onClick={toggleState}>
         <ul className={`${styles['nav-links-list']}`}>
           <li className={styles['nav-item']}>
-            <Link href="/">
-              <a className={styles['nav-link']}>Hola</a>
+            <Link href={ULRs.HOME}>
+              <a className={styles['nav-link']}>
+                <FontAwesomeIcon icon="home" />
+                &nbsp;&nbsp;&nbsp;Home
+              </a>
+            </Link>
+          </li>
+          <li className={styles['nav-item']}>
+            <Link href={URLs.Settings}>
+              <a className={styles['nav-link']}>
+                <FontAwesomeIcon icon="cogs" />
+                &nbsp;&nbsp;&nbsp;Settings
+              </a>
+            </Link>
+          </li>
+          <li className={styles['nav-item']}>
+            <Link href={URLs.About}>
+              <a className={styles['nav-link']}>
+                <FontAwesomeIcon icon="question-circle" />
+                &nbsp;&nbsp;&nbsp;About
+              </a>
             </Link>
           </li>
           <li className={styles['nav-item']}>
             <Link href="/">
-              <a className={styles['nav-link']}>Hola</a>
+              <a className={styles['nav-link']}>
+                <FontAwesomeIcon icon="id-card" />
+                &nbsp;&nbsp;&nbsp;Contact
+              </a>
             </Link>
           </li>
-          <li className={styles['nav-item']}>
-            <Link href="/">
-              <a className={styles['nav-link']}>Hola</a>
-            </Link>
-          </li>
-          <li className={styles['nav-item']}>
-            <Link href="/">
-              <a className={styles['nav-link']}>Hola</a>
-            </Link>
-          </li>
-          <li className={styles['nav-item']}>
-            <Link href="/">
-              <a className={styles['nav-link']}>Hola</a>
-            </Link>
-          </li>
-          <li className={styles['nav-item']}>
-            <Link href="/">
-              <a className={styles['nav-link']}>Hola</a>
-            </Link>
+          <li className={styles['name']}>
+            Omer Marquez    |    2020
           </li>
         </ul>
       </nav>
