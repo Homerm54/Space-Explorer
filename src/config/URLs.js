@@ -4,5 +4,6 @@ export default {
   APOD: 'APOD',
   MarsRover: 'Mars-Rover',
   Settings: 'Settings',
-  About: '/#About'
+  About: '/#About',
+  Contact: '/#Contact'
 }

@@ -33,9 +33,6 @@
   min-height: 100vh;
 }
 
-.first-image {
-  color: var(--custom-white);
-}
 
 /*.fade-out .first-image::before{
   animation: fade-out 400ms forwards;
@@ -44,27 +41,11 @@
   animation: fade-in 400ms both;
 }*/
 
-.first-image::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-image: url('/images/Background Images/Vertical/CometSwan.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  filter: brightness(0.5) blur(1px);
-}
-
-.second-image {
+.first-image {
   color: black;
 }
 
-.second-image::before {
+.first-image::before {
   content: "";
   position: fixed;
   width: 100%;
@@ -78,6 +59,26 @@
   background-position: center;
   background-attachment: fixed;
   filter: brightness(1.2) blur(1px);
+}
+
+.second-image {
+  color: var(--custom-white);
+}
+
+.second-image::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('/images/Background Images/Vertical/CometSwan.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(0.5) blur(1px);
 }
 
 .third-image {

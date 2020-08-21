@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import MainText from '../Main Text/Main Text';
 
 const Images = [
-  { class: 'first-image', copyright: 'Gerald Rhemann', href: "http://www.astrostudio.at/aboutme.php", text: "Find out Amazing things"},
-  { class: 'second-image', copyright: 'Nasa Gallery', href: "https://www.nasa.gov", text: "Learn About the Space"},
+  { class: 'first-image', copyright: 'Nasa Gallery', href: "https://www.nasa.gov", text: "Learn About the Space"},
+  { class: 'second-image', copyright: 'Gerald Rhemann', href: "http://www.astrostudio.at/aboutme.php", text: "Find out Amazing things"},
   { class: 'third-image', copyright: 'Hirofumi Okubo', href: "https://www.flickr.com/people/bluemoonlife/", text: "Explore the Cosmos" },
 ]
 

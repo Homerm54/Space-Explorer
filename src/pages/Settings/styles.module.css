@@ -1,0 +1,105 @@
+.container{
+  padding-top: 20%;
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 768px) {/*md*/
+  .container{
+    padding-top: 10%;
+  }
+}
+
+.title{
+  border-bottom: 2px solid white;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, black 30%, transparent 50%);
+  text-shadow: -2px 3px 10px black;
+}
+
+.icon{
+  font-size: smaller;
+  display: inline-block;
+  margin-bottom: 0.1rem;
+}
+
+.text-success{
+  color: #01f051;
+}
+
+.text-danger{
+  color: #df1d1d;
+}
+
+.muted{
+  color: #9c9a9a;
+}
+
+.ul{
+  list-style: none;
+  margin-left: -1.2rem;
+}
+
+.ul > li{
+  padding: 0.4rem;
+}
+
+.label{
+  padding-left: 0.5rem;
+}
+
+.icon-container{
+  background-color: gray;
+  width: 4rem;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100px;
+  transform: translateY(60%);
+}
+
+.theme-icon{
+  transition-duration: 500ms;
+}
+
+.moon{
+  composes: theme-icon;
+  color: var(--custom-blue);
+  font-size: 1.2rem;
+  position: relative;
+  /*left: 90%;*/
+  transform: translate(300%, -30%) rotate(-0.05turn);
+}
+
+.btn{
+  margin: 0.5rem;
+  margin-left: 0;
+  margin-top: 1.3rem;
+  padding: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+  border-style: solid;
+  text-align: center;
+  font-family: Poppins;
+  box-shadow: -4px 5px 10px 3px black;
+}
+
+.install-icon{
+  color: var(--custom-blue);
+}
+
+.btn-disabled{
+  composes: btn;
+  cursor: auto;
+  filter: opacity(0.7);
+  border-color: grey;
+}
+
+.btn-install{
+  composes: btn-disabled;
+  border-color: var(--custom-blue);
+}
+
+.btn-reset{
+  composes: btn-disabled;
+  border-color: red;
+}

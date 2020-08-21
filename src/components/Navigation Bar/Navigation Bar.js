@@ -55,7 +55,7 @@ function Navbar() {
             </Link>
           </li>
           <li className={styles['nav-item']}>
-            <Link href="/">
+            <Link href={URLs.Contact}>
               <a className={styles['nav-link']}>
                 <FontAwesomeIcon icon="id-card" />
                 &nbsp;&nbsp;&nbsp;Contact
