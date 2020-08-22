@@ -3,3 +3,7 @@ body{
   background-color: var(--custom-white);
   color: black;
 }
+
+html, body{
+  min-height: 100%;
+}
