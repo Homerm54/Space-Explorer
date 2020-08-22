@@ -28,7 +28,7 @@ function Links() {
           <Link href={ULR.MarsRover}>
             <a className={`${styles['nav-item']}`}>
               <span className={`${styles.title} d-block`}>
-                <FontAwesomeIcon icon="user-astronaut" />
+                <FontAwesomeIcon icon="user-astronaut" className={styles.icon}/>
               &nbsp;&nbsp;&nbsp;
               Mars Rovers
               </span>
@@ -43,7 +43,7 @@ function Links() {
         <li className="col-auto">
           <div className={styles['nav-item-disabled']}>
             <div className={`${styles.title}`}>
-              <FontAwesomeIcon icon="dna" />
+              <FontAwesomeIcon icon="dna" className={styles.icon}/>
             &nbsp;&nbsp;&nbsp;Gen Lab&nbsp;&nbsp;
             <br className="d-block d-md-none" />
               <span className={`${styles['text-disabled']}`}>(Comming Soon)</span>
@@ -58,7 +58,7 @@ function Links() {
         <li className="col-auto">
           <div className={`${styles['nav-item-disabled']}`}>
             <div className={styles.title}>
-              <FontAwesomeIcon icon="space-shuttle" />
+              <FontAwesomeIcon icon="space-shuttle" className={styles.icon}/>
               &nbsp;&nbsp;&nbsp;Exoplanets&nbsp;&nbsp;
               <br className="d-block d-md-none" />
               <span className={styles['text-disabled']}>

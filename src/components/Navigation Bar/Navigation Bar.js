@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <section className={`container-fluid ${styles.container}`}>
 
-      <div className={`row`}>
+      <div className={`row font-Orbitron`}>
         <Link href="/">
           <a className={`col ${styles['nav-link']}`} style={{color: 'unset'}}>
             <h2 className={`${styles.title}`}>Space Explorer</h2>

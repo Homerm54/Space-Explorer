@@ -13,12 +13,6 @@
   text-shadow: -7px 6px 5px black;
 }
 
-@media (min-width: 560px) {/*md*/
-  .ul > li{
-    max-width: 50%;
-  }
-}
-
 .nav-item {
   margin: 0.5rem;
   padding: 0.5rem;
@@ -52,6 +46,16 @@
 .icon{
   font-size: 1.3rem;
   margin-right: -0.6rem;
+}
+
+@media (min-width: 560px) {/*md*/
+  .ul > li{
+    max-width: 50%;
+  }
+
+  .icon{
+    max-width: 20%;
+  }
 }
 
 .text-disabled{

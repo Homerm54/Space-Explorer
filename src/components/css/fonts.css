@@ -1,14 +1,16 @@
 @font-face{
-  font-family: Orbitron, monospace;
-  src: url(/fonts/Orbitron/static/Orbitron-Regular.ttf);
+  font-family: Orbitron;
+  src: url('/fonts/Orbitron/static/Orbitron-Regular.ttf');
+  src: local(Orbitron),
+    url('/fonts/Orbitron/static/Orbitron-Black.ttf') format(truetype);
 }
 
 @font-face{
-  font-family: Raleway, Arial, sans-serif;
-  src: url(/fonts/Raleway/static/Raleway-Regular.ttf);
+  font-family: Raleway;
+  src: local(Orbitron), url('/fonts/Raleway/static/Raleway-Regular.ttf');
 }
 
 @font-face{
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  src: url(/fonts/Poppins/Poppins-Regular.ttf);
+  font-family: Poppins;
+  src: local(Orbitron), url('/fonts/Poppins/Poppins-Regular.ttf');
 }

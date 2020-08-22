@@ -1,7 +1,15 @@
 body{
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif;
   background-color: var(--custom-white);
   color: black;
+}
+
+.font-Orbitron{
+  font-family: Orbitron, monospace;
+}
+
+.font-Poppins{
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 html, body{

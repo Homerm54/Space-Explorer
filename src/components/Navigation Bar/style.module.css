@@ -13,7 +13,6 @@
   /*Small 'Margin'*/
   animation: fade-in 1s;
   z-index: 100;
-  font-family: Orbitron;
 }
 
 .toggleButton {
@@ -27,7 +26,6 @@
 }
 
 .nav-links-container {
-  font-family: Raleway;
   color: var(--custom-white);
 
   width: 100%;
