@@ -137,9 +137,17 @@
     filter: brightness(0.4) blur(2px);
   }
 
+  .first-image{
+    color: var(--custom-white);
+  }
+
   .second-image::before{
     background-image: url('/images/Background Images/Horizontal/Stack10.jpg');
     filter: brightness(1.2) blur(1px);
+  }
+
+  .second-image{
+    color: black;
   }
 
   .third-image::before{
