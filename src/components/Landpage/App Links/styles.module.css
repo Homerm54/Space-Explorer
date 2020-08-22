@@ -13,7 +13,7 @@
   text-shadow: -7px 6px 5px black;
 }
 
-@media (min-width: 768px) {/*md*/
+@media (min-width: 560px) {/*md*/
   .ul > li{
     max-width: 50%;
   }
