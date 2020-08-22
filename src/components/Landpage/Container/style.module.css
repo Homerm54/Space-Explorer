@@ -30,7 +30,7 @@
 .container {
   /*Change BG image dynamically*/
   padding-top: 35%;
-  min-height: 110vh;
+  min-height: 100%;
 }
 
 
