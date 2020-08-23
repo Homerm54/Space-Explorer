@@ -42,7 +42,7 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="/images/icons/favicon.ico" />
         <meta name="apple-mobile-web-app-title" content="Space Explorer" />
         <meta name="application-name" content="Space Explorer" />
-        <meta name="theme-color" content="#f1f1f1" /> 
+        <meta name="theme-color" content="#000000" /> 
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
         <meta name="keywords" content="NASA, Nasa, Space, Galaxy, Explore, Telescope, Galaxy Exploration, Universe, Mars, SpaceX, Mars Rover, Space Images, Space Videos, PWA, Progressive Web App, Space Explorer, Web App, Awesome Site, Explore Universe, Nasa API" />

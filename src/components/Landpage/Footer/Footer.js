@@ -7,9 +7,9 @@ function Footer() {
 
   return (
     <div className={`row ${styles.container}`}>
-      <div className={`col-6`}>
+      <div className={`col-6 m-auto`}>
         <a href={URLs.About} className={`${styles.button}`} role="button">
-          <FontAwesomeIcon icon="chevron-down" className={styles.icon} />
+          <FontAwesomeIcon icon="chevron-down" className={`pt-1 ${styles.icon}`} />
           &nbsp;&nbsp;
           How this works
         </a>

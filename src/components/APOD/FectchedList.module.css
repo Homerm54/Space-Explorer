@@ -1,0 +1,14 @@
+.ul{
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.ul > .li{
+  border-bottom: 2px solid gray ;
+  border-image-source: linear-gradient(to right, transparent 5%, grey, transparent 95%);
+  border-image-slice: 1;
+}
+
+.ul > .li:last-child{
+  border-bottom-style: none;
+}

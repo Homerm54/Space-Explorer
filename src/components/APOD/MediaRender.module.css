@@ -1,0 +1,23 @@
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.figure{
+  margin-top: 1.2rem;
+}
+
+.figcaption{
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.spinner{
+  font-size: x-large;
+  animation: rotate 1.5s linear infinite;
+  color: var(--custom-blue);
+}

@@ -1,11 +1,18 @@
 .container {
   justify-content: center;
   text-align: center;
-  margin-bottom: 4rem;
 }
 
 .h1 {
   font-size: 350%;
+}
+
+.guide-text{
+  font-weight: bold;
+}
+
+.aside{
+  text-decoration: overline;
 }
 
 @media (min-width: 576px) {

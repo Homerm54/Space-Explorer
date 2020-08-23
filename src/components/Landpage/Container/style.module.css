@@ -53,6 +53,7 @@
   top: 0;
   left: 0;
   z-index: -1;
+  background-color: black;
   background-image: url('/images/Background Images/Vertical/Betelgeuse.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,6 +74,7 @@
   top: 0;
   left: 0;
   z-index: -1;
+  background-color: black;
   background-image: url('/images/Background Images/Vertical/CometSwan.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,6 +95,7 @@
   top: 0;
   left: 0;
   z-index: -1;
+  background-color: var(--custom-white);
   background-image: url('/images/Background Images/Vertical/Taurus2Eridanus.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,6 +145,7 @@
   }
 
   .second-image::before{
+    background-color: var(--custom-white);
     background-image: url('/images/Background Images/Horizontal/Stack10.jpg');
     filter: brightness(1.2) blur(1px);
   }
@@ -151,6 +155,7 @@
   }
 
   .third-image::before{
+    background-color: black;
     background-image: url('/images/Background Images/Horizontal/Zodiacal.jpg');
     filter: brightness(0.4) blur(2px);
   }

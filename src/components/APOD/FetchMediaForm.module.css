@@ -1,0 +1,31 @@
+.container {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, black 60%, transparent 90%);
+}
+
+.selector {
+  margin: 0.5rem;
+  margin-top: 0;
+  padding-top: 0.1rem;
+  padding-bottom: 0.25rem;
+  border-radius: 5px;
+  background-color: inherit;
+  text-align: center;
+  width: min-content;
+}
+
+.btn {
+  align-self: center;
+  border-radius: 5px;
+  border-style: solid;
+  padding-left: 12px;
+  margin-left: 0.8rem;
+}
+
+@media (min-width: 768px) {/*md*/
+  .btn{
+    padding-left: 15px;
+  }
+}

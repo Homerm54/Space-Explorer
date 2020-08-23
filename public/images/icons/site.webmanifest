@@ -15,7 +15,7 @@
     ],
     "theme_color": "#f1f1f1",
     "background_color": "#f1f1f1",
-    "start_url": "space-explorer-beta.vercel.app",
+    "start_url": "/",
     "display": "standalone",
     "orientation": "portrait"
 }
