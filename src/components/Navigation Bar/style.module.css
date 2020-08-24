@@ -13,6 +13,8 @@
   /*Small 'Margin'*/
   animation: fade-in 1s;
   z-index: 100;
+
+  color: var(--custom-white);
 }
 
 .toggleButton {

@@ -1,0 +1,158 @@
+@keyframes slide-in{
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
+.container {
+  height: 100vh;
+  /* padding-top: 10%; */
+  color: whitesmoke;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.a {
+  display: inline-block;
+  position: relative;
+  z-index: 12;
+  display: inline-block;
+  position: relative;
+  z-index: 12;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.a:hover {
+  text-decoration: none;
+  color: var(--custom-blue);
+}
+
+.title {
+  position: relative;
+  font-size: x-large;
+  z-index: 2;
+}
+
+.btn {
+  width: max-content;
+  border-radius: 10px;
+  border: 2px solid var(--custom-blue);
+  background-color: black;
+  color: var(--custom-white);
+  display: block;
+  position: absolute;
+  padding: 0.2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  bottom: 1rem;
+  /*Centering*/
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.btn:hover{
+  text-decoration: none;
+}
+
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: blur(30px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 1s;
+  z-index: 1;
+}
+
+.img-container::before:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text-container {
+  z-index: 2;
+  position: relative;
+}
+
+.hint{
+  position: fixed;
+  bottom: 3%;
+  left: 0%;
+  z-index: 20;
+  font-size: x-large;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-left-style: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
+
+  animation: slide-in 750ms 2s both;
+}
+
+.img-container {
+  background-color: var(--custom-white);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100%/3);
+  background-position: center;
+  background-image: url('/images/Background Images/Mars Rover/big/Curiosity.jpg');
+  text-align: center;
+
+  padding-top: 20%;
+  margin-bottom: 0.5rem;
+}
+
+.spirit {
+  composes: img-container;
+}
+
+.opportunity {
+  composes: img-container;
+}
+
+.curiosity {
+  composes: img-container;
+}
+
+@media (min-width: 768px) {
+  /*md*/
+
+  .img-container{
+    margin-bottom: 0;
+  }
+
+  .spirit {
+    height: 100%;
+    padding-top: 30%;
+    background-position: left;
+    background-image: url('/images/Background Images/Mars Rover/big/Opportunity.jpg');
+  }
+  .opportunity {
+    height: 100%;
+    padding-top: 30%;
+    background-position: center;
+    background-image: url('/images/Background Images/Mars Rover/big/Opportunity.jpg');
+  }
+  .curiosity {
+    height: 100%;
+    padding-top: 30%;
+    background-position: right;
+    background-image: url('/images/Background Images/Mars Rover/big/Curiosity.jpg');
+  }
+}
