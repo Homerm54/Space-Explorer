@@ -36,22 +36,20 @@
   color: black;
 }
 
-.description {
-  position: fixed;
-  transform: translateX(100%);
+.image-list {
+  margin-top: 0;
 }
 
 @media (min-width: 768px) {
-  .img-container {
-    border-right: 2px solid black;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to bottom, var(--custom-white), rgba(255, 255, 255, 0.3) 20% 80%, var(--custom-white));
+  .image-list {
+    margin-top: -7.5%;
   }
+
   .container {
     padding-top: 8%;
   }
   .description {
-    position: relative;
+    position: unset;
     transform: translateX(0%);
   }
 }

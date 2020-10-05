@@ -43,25 +43,25 @@ function MediaRenderForm({ setDate }) {
 
   return (
     <form className={`row justify-content-center text-center ${styles.container}`} onSubmit={submitMethod}>
-      <div className="col-3 row">
+      <div className="col-3 row mx-md-n5 px-md-5">
         <label htmlFor="day" className={`col-12`}>Day</label>
         <select name="day" className={`col ${styles.selector}`} defaultValue={date.getDate()}>
           {dates(1, 31)}
         </select>
       </div>
-      <div className="col-3 row">
+      <div className="col-3 row mx-md-n5 px-md-5">
         <label htmlFor="month" className={`col-12`}>Month</label>
         <select name="month" className={`col ${styles.selector}`} defaultValue={date.getMonth() + 1}>
           {dates(1, 12)}
         </select>
       </div>
-      <div className="col-3 row">
+      <div className="col-3 row mx-md-n5 px-md-5">
         <label htmlFor="year" className={`col-12`}>Year</label>
         <select name="year" className={`col ${styles.selector}`} defaultValue={date.getFullYear()}>
           {dates(1995, date.getFullYear())}
         </select>
       </div>
-      <div className="col-3 row">
+      <div className="col-3 row mx-md-n5 px-md-5">
         <div className={`col-12 pb-2`}></div>
         <button type="submit" className={`col-auto font-Poppins ${styles.btn}`}>Fetch</button>
       </div>

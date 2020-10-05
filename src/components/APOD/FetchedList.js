@@ -2,7 +2,7 @@ import styles from './FectchedList.module.css';
 
 function FetchedList() {
   return (
-    <>
+    <div className='container'>
     <h3 className="h6 mt-3">10 Last Fetched Images</h3>
     <ul className={`pl-4 ${styles.ul}`}>
       <li className={styles.li}>1</li>
@@ -10,7 +10,7 @@ function FetchedList() {
       <li className={styles.li}>3</li>
       <li className={styles.li}>4</li>
     </ul>
-    </>
+    </div>
   )
 }
 
