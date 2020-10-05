@@ -43,7 +43,7 @@
   /*Default*/
   transition: transform 500ms, background-color 250ms ease 600ms;
   /*Change this according to the theme*/
-  background: linear-gradient(270deg, #000000ba 78%, transparent 80%);
+  background: linear-gradient(270deg, #002c41ba 78%, transparent 80%);
 }
 
 .show-navContainer {
@@ -79,7 +79,7 @@
   padding: 0.2rem;
   border-width: 2px;
   border-bottom-style: solid;
-  border-image-source: linear-gradient(to left, black, transparent);
+  border-image-source: linear-gradient(to left, var(--custom-white), transparent);
   border-image-slice: 1;
   opacity: 0;
   transition: opacity 500ms;
@@ -111,19 +111,19 @@
 @media (min-width: 768px) {
   /*md*/
   .toggleButton {
-    font-size: 180%;
+    font-size: 140%;
   }
   .title {
-    font-size: 180%;
+    font-size: 150%;
   }
   .nav-links-container {
     padding-top: 5.2rem;
   }
   .nav-links-list {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .nav-links-container{
-    background: linear-gradient(270deg, #000000d5 40%, transparent 100%);
+    background: linear-gradient(270deg, #002c41ba 40%, transparent 100%);
   }
   .nav-links-list{
     width: auto;
@@ -133,15 +133,15 @@
 @media (min-width: 1200px) {
   /*xl*/
   .toggleButton {
-    font-size: 230%;
+    font-size: 150%;
   }
   .title {
-    font-size: 230%;
+    font-size: 170%;
   }
   .nav-links-container {
     padding-top: 6.2rem;
   }
   .nav-links-list {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
 }

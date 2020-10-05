@@ -62,13 +62,13 @@ function Settings() {
             <input type="checkbox" name="hints_checkbox" disabled checked />
             <label className={`${styles.label} ${styles.muted}`} htmlFor="hints_checkbox">Show Hints (Under Dev)</label>
             <br />
-            <button className={styles['btn-install']}>
+            <button disabled className={styles['btn-install']}>
               <FontAwesomeIcon icon="long-arrow-alt-down" className={styles['install-icon']} />
             &nbsp;&nbsp;&nbsp;
             Install PWA (Under Dev)
             </button>
             <br />
-            <button className={styles['btn-reset']}>Reset Settings (Under Dev)</button>
+            <button disabled className={styles['btn-reset']}>Reset Settings (Under Dev)</button>
           </form>
         </section>
       </main>

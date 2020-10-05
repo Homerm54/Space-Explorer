@@ -1,14 +1,47 @@
 import Head from 'next/head';
+import { useState, useEffect } from 'react';
 
 import RenderMedia from 'components/APOD/RenderMedia';
-import FetchMedia from 'components/APOD/FetchMediaForm';
+import FetchMediaForm from 'components/APOD/FetchMediaForm';
 import FetchedMediaList from 'components/APOD/FetchedList';
+import fetchMedia from 'components/APOD/FetchMethod';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './styles.module.css';
 
+//2020-9-1 Video
+
+
+/**
+ * Index Page, render all the components to create an interface to search
+ * and retrieve media from the Nasa APOD API, hence it's name
+ */
 function APOD() {
+
+  let date = new Date();
+
+  const [fetchDate, setFetchDate] = useState({
+    day: date.getDate(), month: (date.getMonth() + 1), year: date.getFullYear()
+  });
+
+  const [fetchedMedia, setFetchedMedia] = useState({
+    media: false, title: false, copyright: false,
+    date: `${fetchDate.year}-${fetchDate.month}-${fetchDate.day}`, mediaType: 'image',
+    explanation: false, loading: true
+  });
+
+  useEffect(() => {
+    const date = `${fetchDate.year}-${fetchDate.month}-${fetchDate.day}`;
+    //String formated for Nasa API   YYYY-MM-DD
+
+    let tempData = {
+      date
+    }; //Store the data fetched here
+
+    fetchMedia(date, setFetchedMedia, tempData, true);
+
+  }, [fetchDate])
 
   return (
     <>
@@ -24,8 +57,9 @@ function APOD() {
         </h1>
         <div className={`row ${styles['main-container']}`}>
           <section className={`col-12 col-md-6 ${styles['img-container']}`}>
-            <RenderMedia />
-            <FetchMedia />
+            <RenderMedia fetchedMedia={fetchedMedia} />
+            <h3 className='h4 inline-block p-2'>Fetch more Images/Videos by date!</h3>
+            <FetchMediaForm setDate={setFetchDate}/>
             <FetchedMediaList />
           </section>
           <section className={`col ${styles.description}`}>

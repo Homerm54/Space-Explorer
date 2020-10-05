@@ -12,8 +12,8 @@
 .title{
   border-bottom: 2px solid white;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, black 30%, transparent 50%);
-  text-shadow: -2px 3px 10px black;
+  border-image-source: linear-gradient(to right, var(--custom-white) 30%, transparent 50%);
+  /* text-shadow: -2px 3px 10px black; */
 }
 
 .icon{
@@ -80,7 +80,9 @@
   border-style: solid;
   text-align: center;
   font-family: Poppins;
-  box-shadow: -4px 5px 10px 3px black;
+  /* box-shadow: -4px 5px 10px 3px black; */
+  color: inherit;
+  background-color: #ddd7d725;
 }
 
 .install-icon{

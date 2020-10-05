@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes fade-in{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
 .container {
   height: 100vh;
   /* padding-top: 10%; */
@@ -76,10 +85,26 @@
   left: 0;
   transition: background-color 1s;
   z-index: 1;
+
+}
+.img-container {
+  background-color: var(--custom-white);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100%/3);
+  background-position: center;
+  background-image: url('/images/Background Images/Mars Rover/big/Curiosity.jpg');
+  text-align: center;
+
+  padding-top: 20%;
+  margin-bottom: 0.5rem;
+
+  animation: fade-in 200ms ease-in-out 50ms both;
 }
 
 .img-container::before:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
 }
 
 .text-container {
@@ -101,34 +126,25 @@
   padding-left: 0.5rem;
   padding-right: 0.2rem;
 
-  animation: slide-in 750ms 2s both;
+  color: black;
+  animation: slide-in 750ms 3s both;
 }
 
-.img-container {
-  background-color: var(--custom-white);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: calc(100%/3);
-  background-position: center;
-  background-image: url('/images/Background Images/Mars Rover/big/Curiosity.jpg');
-  text-align: center;
-
-  padding-top: 20%;
-  margin-bottom: 0.5rem;
-}
 
 .spirit {
   composes: img-container;
 }
 
-.opportunity {
-  composes: img-container;
-}
-
 .curiosity {
   composes: img-container;
+  animation-delay: 250ms;
 }
+
+.opportunity {
+  composes: img-container;
+  animation-delay: 450ms;
+}
+
 
 @media (min-width: 768px) {
   /*md*/

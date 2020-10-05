@@ -1,7 +1,7 @@
 body{
   font-family: Raleway, Arial, sans-serif;
-  background-color: var(--custom-white);
-  color: black;
+  color: var(--custom-white);
+  background-color: black;
 }
 
 .font-Orbitron{
