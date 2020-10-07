@@ -6,7 +6,7 @@ import ULR from 'config/URLs';
 
 function Links() {
   return (
-    <nav className={`${styles.container}`}>
+    <nav className={`${styles.container} pt-5 mt-3 mt-md-0 pt-md-0`}>
       <ul className={`row justify-content-around ${styles.ul}`}>
         <li className="col-auto">
           <Link href={ULR.APOD}>

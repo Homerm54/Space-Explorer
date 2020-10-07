@@ -40,7 +40,8 @@ function APODFetch(date, setData, initState, verbose) {
         initState.copyright = (<span className="text-danger">{jsonData.msg}</span>);
         setData(prevData => ({
           ...prevData,
-          ...initState
+          ...initState,
+          loading: false
         }));
 
       } else {
@@ -51,9 +52,9 @@ function APODFetch(date, setData, initState, verbose) {
         initState.explanation = jsonData.explanation;
         
         if (jsonData.copyright) {
-          initState.copyright = jsonData.copyright;
+          initState.copyright = 'Copyright: ' + jsonData.copyright;
         } else {
-          initState.copyright = 'Nasa Public Image Gallery';
+          initState.copyright = 'Copyright: ' + 'Nasa Public Image Gallery';
         }
 
         if (jsonData.media_type === 'image') {
@@ -82,7 +83,9 @@ function APODFetch(date, setData, initState, verbose) {
         }
       }
     }).catch(e => {
-      verbose && console.log('An error ocurred in the FetchMethod');
+      verbose && console.log('An error ocurred in the FetchMethod'); 
+
+      initState.media = "images/bad-img.png";
       initState.title = <span className="text-danger text-bold">Opps, we've got an error</span>;
       initState.copyright = (<span className="text-bold">
         This is awkward, but we couldn't fetch the data :(
@@ -91,7 +94,7 @@ function APODFetch(date, setData, initState, verbose) {
       </span>);
 
       console.debug("APOD_DATA_STATE: Error raised\n");
-      setData(prevState => ({ ...prevState, ...initState }));
+      setData(prevState => ({ ...prevState, ...initState, loading: false }));
     });
 
   //Show Loading indicator while fetching

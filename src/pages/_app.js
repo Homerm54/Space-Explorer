@@ -7,6 +7,8 @@ import Navbar from 'components/Navigation Bar/Navigation Bar';
 
 import 'components/Fontawesome Icon Library/Library';
 
+import { StateProvider } from 'Redux/store';
+
 //Global CSS
 import 'components/css/fonts.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -49,10 +51,13 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="author" content="Omer Marquez" />
         <meta name="robots" content="index, follow" />
       </Head>
+      
       <Navbar />
-      <Component {...pageProps} />
+      <StateProvider>
+        <Component {...pageProps} />
+      </StateProvider>
       <noscript>
-        You need to enable JavaScript to run the features of this app.
+      You need to enable JavaScript to run the features of this app.
       </noscript>
     </>
   )

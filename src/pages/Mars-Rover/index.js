@@ -4,7 +4,19 @@ import Head from 'next/head';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { useContext, useEffect } from 'react';
+import { store } from 'Redux/store';
+import actions from 'Redux/actions';
+
+
 function Index() {
+
+  const { dispatch } = useContext(store)
+
+  useEffect(()=>{
+    dispatch({type: actions.test,
+      test_message: 'Mars-Rover Init, Context Provider Working!'})
+  }, []) // Testing here
 
   return (
     <>

@@ -16,10 +16,16 @@
   width: 100%;
 }
 
-.media_container {
-  border-right: 2px solid black;
+.div_line {
+  border-left: 2px solid black;
   border-image-slice: 1;
   border-image-source: linear-gradient(to bottom, var(--custom-white), rgba(255, 255, 255, 0.3) 20% 80%, var(--custom-white));
+  height: auto;
+}
+
+.img{
+  width: 100%;
+  height: max-content;
 }
 
 .spinner {

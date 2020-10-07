@@ -15,3 +15,11 @@ body{
 html, body{
   min-height: 100vh;
 }
+
+.text-danger{
+  color: red;
+}
+
+.text-warning{
+  color: yellow;
+}
