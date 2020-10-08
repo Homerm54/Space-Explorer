@@ -46,7 +46,7 @@ function MediaRender({ fetchedMedia }) {
     if (fetchedMedia.mediaType === 'image') {
       media =
         <figure className={`row`}>
-          <span className='col-12 col-md-7'>
+          <span className='col-12 col-md-7 row no-gutter align-content-center'>
             <img src={fetchedMedia.media} className={`${styles.img} ${styles.media_container}`} />
           </span>
           <figcaption className={`col pt-4 pb-5 ${styles.figcaption}`}>
@@ -67,7 +67,7 @@ function MediaRender({ fetchedMedia }) {
   } else {
     media =
       <figure className={`row`}>
-        <span className='col-12 col-md-7 row align-content-center'>
+        <span className='col-12 col-md-7 row no-gutter align-content-center'>
           <img src="images/bad-img.png" className={`${styles.img}`} />
         </span>
         <figcaption className={`col pt-4 pb-5 ${styles.figcaption}`}>
