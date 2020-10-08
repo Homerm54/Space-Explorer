@@ -15,7 +15,7 @@ let array_of_searchs = []
 
 function FetchedList() {
 
-  const { dispatch } = useContext(store)
+  const { dispatch } = useContext(store);
 
   useEffect(() =>{
     // Actually shouldn't be a redux thing.
