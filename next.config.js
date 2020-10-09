@@ -1,9 +1,7 @@
-// const withWorkbox = require("next-with-workbox");
+const withWorkbox = require("next-with-workbox");
 
-// module.exports = withWorkbox({
-//   workbox: {
-//    swSrc: "worker.js",
-//   },
-// });
-
-module.exports = {}
+module.exports = withWorkbox({
+  workbox: {
+   swSrc: "worker.js",
+  },
+});

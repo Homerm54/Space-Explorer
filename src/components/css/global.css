@@ -17,9 +17,9 @@ html, body{
 }
 
 .text-danger{
-  color: red;
+  color: #be2626;
 }
 
 .text-warning{
-  color: yellow;
+  color: rgb(219, 219, 59);
 }
