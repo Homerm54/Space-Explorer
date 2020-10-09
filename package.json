@@ -32,10 +32,11 @@
     "bootstrap": "^4.5.2",
     "idb-keyval": "^3.2.0",
     "next": "9.3.5",
+    "next-with-workbox": "^1.2.4",
     "nprogress": "^0.2.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-intersection-observer": "^8.26.2",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "workbox-precaching": "^5.1.4"
   }
 }

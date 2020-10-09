@@ -21,6 +21,7 @@ const dates = (min, max) => {
   return numbers;
 };
 
+
 /**
  * Provide a Form layout to fetch media in the Nasa APOD by date.
  * Will set a global state through the setDate function.
@@ -33,7 +34,7 @@ function MediaRenderForm({ setDate }) {
   const { dispatch } = useContext(store);
 
   // Method to be used whrn form submitted
-  let submitMethod = e => {
+  const submitMethod = e => {
     e.preventDefault();
     const target = e.target;
 
@@ -42,8 +43,11 @@ function MediaRenderForm({ setDate }) {
       month: target.month.value,
       year: target.year.value
     }
-    
-    dispatch({type: actions.save_APOD_history})
+    dispatch({ //This is been fired twice, why?
+      type: actions.update_APOD_queries, 
+      add_new: true, 
+      query: date, // Add new entry in the array
+    })
     
     setDate({...date})
   }

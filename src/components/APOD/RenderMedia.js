@@ -45,9 +45,9 @@ function MediaRender({ fetchedMedia }) {
 
     if (fetchedMedia.mediaType === 'image') {
       media =
-        <figure className={`row`}>
-          <span className='col-12 col-md-7 row no-gutter align-content-center'>
-            <img src={fetchedMedia.media} className={`${styles.img} ${styles.media_container}`} />
+        <figure className={`row `}>
+          <span className='col-12 px-0'>
+            <img src={fetchedMedia.media} className={`${styles.img}`} />
           </span>
           <figcaption className={`col pt-4 pb-5 ${styles.figcaption}`}>
             {text}
@@ -56,10 +56,10 @@ function MediaRender({ fetchedMedia }) {
     } else { //Video is the default
       media =
         <div className='row'>
-          <div className={`${styles.video_container}`}>
-            <iframe className={`${styles.video_iframe}`} title="Amazing Space Video" src={fetchedMedia.media /*youtube embed url*/} width="560" height="315" controls="1" allowFullScreen={true}></iframe>
+          <div className={`col-12 px-0 ${styles['video-container']}`}>
+            <iframe title="Amazing Space Video" src={fetchedMedia.media /*youtube embed url*/} controls="1"></iframe>
           </div>
-          <div className={`pt-4 pb-5 ${styles.figcaption} ${styles.div_line}`}>
+          <div className={`col pt-4 pb-5 pl-1 ${styles.figcaption} ${styles.div_line}`}>
             {text}
           </div>
         </div>
@@ -67,7 +67,7 @@ function MediaRender({ fetchedMedia }) {
   } else {
     media =
       <figure className={`row`}>
-        <span className='col-12 col-md-7 row no-gutter align-content-center'>
+        <span className='col-12 px-0'>
           <img src="images/bad-img.png" className={`${styles.img}`} />
         </span>
         <figcaption className={`col pt-4 pb-5 ${styles.figcaption}`}>

@@ -26,10 +26,10 @@ function APOD() {
   });
 
   const [fetchedMedia, setFetchedMedia] = useState({
-    media: false, title: false, copyright: false,
-    date: `$
-    {fetchDate.year}-${fetchDate.month}-${fetchDate.day}`, mediaType: 'image',
-    explanation: false, loading: true
+    media: null, title: null, copyright: null,
+    date: `${fetchDate.year}-${fetchDate.month}-${fetchDate.day}`,
+    mediaType: 'image',
+    explanation: null, loading: true
   });
 
   useEffect(() => {
@@ -63,7 +63,7 @@ function APOD() {
           </section>
           <section className='col-12'>
             <FetchMediaForm setDate={setFetchDate} />
-            <FetchedMediaList />
+            <FetchedMediaList setDate={setFetchDate}/>
           </section>
         </div>
       </main>

@@ -4,7 +4,7 @@ import {
   faSatellite, faUserAstronaut, faChevronDown, faDatabase,
   faMobile, faCogs, faHome, faQuestionCircle, faIdCard, faInfoCircle, 
   faSun, faMoon, faLongArrowAltDown, faAlignLeft, faImage, faCalendar, 
-  faSpinner, faCircleNotch, faExternalLinkAlt, faArrowRight
+  faSpinner, faCircleNotch, faExternalLinkAlt, faArrowRight, faTrash
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -12,5 +12,6 @@ library.add(
   faSatellite, faUserAstronaut, faChevronDown, faDatabase,
   faMobile, faCogs, faHome, faQuestionCircle, faIdCard,
   faInfoCircle, faSun, faMoon, faLongArrowAltDown, faAlignLeft, faImage,
-  faCalendar, faSpinner, faCircleNotch, faExternalLinkAlt, faArrowRight
+  faCalendar, faSpinner, faCircleNotch, faExternalLinkAlt, faArrowRight,
+  faTrash
 );

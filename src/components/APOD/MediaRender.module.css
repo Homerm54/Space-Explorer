@@ -16,13 +16,6 @@
   width: 100%;
 }
 
-.div_line {
-  border-left: 2px solid black;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to bottom, var(--custom-white), rgba(255, 255, 255, 0.3) 20% 80%, var(--custom-white));
-  height: auto;
-}
-
 .img{
   width: 100%;
   height: max-content;
@@ -34,23 +27,19 @@
   color: var(--custom-blue);
 }
 
-.video_container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
 }
 
-.video_container::after {
-  display: block;
-  content: "";
-  padding-top: 56.25%;
-  /*Aspect ratio of 16/9 (9/16 * 100%)*/
-}
-
-.video_iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.video-container iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-style: none;
 }
