@@ -1,7 +1,5 @@
 # Space-Explorer
 
-## (Description)
-
 Web App build with React/Redux, using Next.js to serve Prerendered Pages (Static Generation). Been served in Vercel [here](space-explorer-web.vercel.app).
 
 This Web App is meant to be a friendly UI to use the Nasa API features like APOD, Mars Rover, etc. Using Workbox to be usable as a Progressive Web App. Also uses IndexedDB, to save user actions ans history in the same browser.
