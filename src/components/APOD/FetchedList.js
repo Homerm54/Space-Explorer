@@ -7,6 +7,7 @@ import { get, del } from 'idb-keyval';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+// Default component for when no Query array
 const def_list = <div className='pl-2'>
   Seems like you haven't searched other media files.
   <br />
@@ -14,6 +15,7 @@ const def_list = <div className='pl-2'>
   your browser might not support this feature.
 </div>
 
+// Handy function to create an array of JSX List
 function create_query_list(queries, setDate) {
   return (
     <ul className={styles.ul}>
@@ -50,15 +52,24 @@ function delQueries(dispatch) {
   }
 }
 
-
+/**
+ * The component, render a list of entries, with a button to delete them.
+ * 
+ * Under the hood, this component calls the the `idb-keyval` method `get` to retrieve
+ * the queries from the database, pass then to the Store and distribute them as needed.
+ * 
+ * @param {setState Function} setDate: Change the current date in the context
+ */
 function FetchedList({ setDate }) {
 
   const { state, dispatch } = useContext(store);
 
+  //Extract Query from State, whenever another component updates, this updates
   let array_of_searchs = state.APOD_queries;
   console.log(array_of_searchs)
   if (array_of_searchs) array_of_searchs = create_query_list(array_of_searchs, setDate);
 
+  // Fetch DB for Queries
   useEffect(() => {
     get('APOD_queries').then(queries => {
       if (queries) { // Return undefined if no query array found

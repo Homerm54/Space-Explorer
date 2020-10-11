@@ -23,17 +23,18 @@ const dates = (min, max) => {
 
 
 /**
+ *  *** Component ***
  * Provide a Form layout to fetch media in the Nasa APOD by date.
  * Will set a global state through the setDate function.
  *
- * The date used here sholud by handled by the main component (fetch section).
+ * The date used here sholud be handled by the main component (fetch section).
  */
 function MediaRenderForm({ setDate }) {
 
   const date = new Date();
   const { dispatch } = useContext(store);
 
-  // Method to be used whrn form submitted
+  // Method to be used when form submitted
   const submitMethod = e => {
     e.preventDefault();
     const target = e.target;

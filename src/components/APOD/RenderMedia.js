@@ -2,6 +2,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './MediaRender.module.css';
 
+/**
+ * 
+ * @param {object} fetchedMedia: Contains all the media related attributes needed to render.
+ * 
+ *  * loading: Attribute that tells if the fetch method is on progress (async, render an wait thing)
+ *  * explanation: Text that explains the image/video
+ *  * title: Of the media
+ *  * copyright
+ *  * media: the url of the image/video
+ *  * mediaType: String, either `'image'` of `'video'`. (Note: Passing something else that `'image'` assumes `'video'`)
+ */
 function MediaRender({ fetchedMedia }) {
 
   //Load the defaults
@@ -32,6 +43,7 @@ function MediaRender({ fetchedMedia }) {
     </section>
   </>)
 
+  // Dynamic Rendering, according to the type of media passed.
   if (!fetchedMedia.loading) {
 
     text = <span className="d-inline-block">

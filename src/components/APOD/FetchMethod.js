@@ -22,6 +22,7 @@ async function fecthShortcut(url, verbose) {
 }
 
 /**
+   * Function to be used specifically by the APOD section of the Web App.
    * 
    * @param {string-formated} date The Date to which the user want to retrieve the media (earth date)
    * @param {state function} setData setState function, to which the data retireved after the search will be updated.
@@ -50,7 +51,7 @@ function APODFetch(date, setData, initState, verbose) {
         initState.title = jsonData.title;
         initState.mediaType = jsonData.media_type;
         initState.explanation = jsonData.explanation;
-        
+
         if (jsonData.copyright) {
           initState.copyright = 'Copyright: ' + jsonData.copyright;
         } else {
@@ -83,7 +84,7 @@ function APODFetch(date, setData, initState, verbose) {
         }
       }
     }).catch(e => {
-      verbose && console.log('An error ocurred in the FetchMethod'); 
+      verbose && console.log('An error ocurred in the FetchMethod');
 
       initState.media = "images/bad-img.png";
       initState.title = <span className="text-danger text-bold">Opps, we've got an error</span>;
