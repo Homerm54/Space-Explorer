@@ -8,7 +8,7 @@ This Web App is meant to be a friendly UI to use the Nasa API features like APOD
 
 Download this repo, cd into the repo folder, use the command `npm install`, to install all the dependencies needed.
 
-## (Usage)
+## How to use this Repo
 
 `package.json` comes with three function, this functions are the way you can launch this Web App:
 
